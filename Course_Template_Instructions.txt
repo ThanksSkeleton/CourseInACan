@@ -1,0 +1,44 @@
+VERSION 1.0 (CourseInACan Protocol)
+
+COURSE_X_INSTRUCTIONS.TXT
+
+=============================
+
+COURSE TITLE:
+[Insert full course title here]
+Example: Introduction to Probability
+
+PRIMARY REFERENCE:
+[Insert full textbook citation and authorship here]
+Example: "Introduction to Probability" by Charles M. Grinstead and J. Laurie Snell
+
+GOAL STATEMENT:
+[Define the overarching purpose of completing this course beyond mere chapter completion.]
+Example: This course builds foundational probability concepts necessary for later study of financial stochastic calculus and Black-Scholes modeling.
+
+CHAPTER LIST:
+[List chapters for tutoring, specifying both PDF file name and chapter title.]
+Example:
+- CHAPTER_1_DiscreteProbabilityDistributions.pdf : Discrete Probability Distributions
+- CHAPTER_2_ContinuousProbabilityDensities.pdf : Continuous Probability Densities
+- CHAPTER_3_Combinatorics.pdf : Combinatorics
+- CHAPTER_4_5_ConditionalProbability_DistributionsandDensities.pdf : Conditional Probability and Distributions and Densities
+- CHAPTER_6_ExpectedValueandVariance.pdf : Expected Value and Variance
+- CHAPTER_7_SumsofRandomVariables.pdf : Sums of Random Variables
+- CHAPTER_8_LawofLargeNumbers.pdf : Law of Large Numbers
+- CHAPTER_9_CentralLimitTheorem.pdf : Central Limit Theorem
+- CHAPTER_10_GeneratingFunctions.pdf : Generating Functions
+- CHAPTER_11_MarkovChains.pdf : Markov Chains
+- CHAPTER_12_RandomWalks.pdf : Random Walks
+
+ROLEPLAY SCENARIOS (Optional):
+[List any optional roleplay scenarios the tutor may invoke if requested by the user.]
+Example:
+- Gauss and the Observatory Wars (Probability)
+- Newton and the Artillery Problem (Calculus)
+- Einstein and the Dance of the Pollen (Stochastic Calculus)
+
+=============================
+
+END OF TEMPLATE
+

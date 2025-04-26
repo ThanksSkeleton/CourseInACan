@@ -1,0 +1,75 @@
+VERSION 1.0 (CourseInACan Protocol)
+
+COURSE IN A CAN PROTOCOL.TXT
+
+=============================
+
+META-PROTOCOL: Course Creation and Execution
+
+Purpose:
+Create rigorous, hallucination-resistant tutoring courses designed specifically for LLM-based tutors, using authoritative external textbooks, tightly structured artifact generation, and strict tutoring flow discipline.
+
+PROCESS OVERVIEW
+
+1. External Source Selection
+- Identify a free, authoritative textbook (PDF format preferred) intended for use with LLM-based tutors.
+- Ensure content alignment with study goals.
+
+2. PDF Acquisition
+- Manually download PDF.
+- Verify quality (no missing pages, OCR errors).
+
+3. Table of Contents Extraction and Page Offset Mapping
+- Extract clean Table of Contents to plaintext, listing chapter names and logical page numbers.
+- Record manual offset required to align logical pages with physical PDF pages (e.g., prefaces, front matter).
+
+4. Parameter Generation for Slicing Script
+- Provide extracted Table of Contents and page offset to ChatGPT.
+- Instruct ChatGPT to generate input parameters (chapter slices) for the PDF slicing script based on logical chapter breaks.
+
+5. PDF Chunking
+- Run the slicing script using the generated parameters.
+- Slice into chapter-based PDFs.
+- Combine adjacent chapters if together <110 pages.
+- Flag chapters >140 pages for manual intervention.
+- Name slices using the format: CHAPTER_<X>_<TITLE>.pdf.
+
+6. Spot Check Chapter Slices
+- Manually inspect each generated chapter PDF.
+- Verify correct start and end pages, correct content formatting, and absence of slicing errors.
+
+7. Artifact Generation
+- Create the following:
+  - Course_X_Instructions.txt (course-specific configuration).
+  - (Note: Course_Universal_Instructions.txt and Project_Context_Message.txt are constant across all courses and do not require regeneration.)
+
+8. Folder Organization
+- Place chapter PDFs and instruction files into a dedicated project folder.
+
+9. Tutoring Execution Preparation
+- Upload Course_Universal_Instructions.txt and Course_X_Instructions.txt once at course creation.
+
+10. Tutoring Execution and Operational Discipline
+For each tutoring session:
+- Delete the previous chapter slice from context.
+- Upload only the new target chapter slice.
+- Explicitly instruct the LLM to:
+  - Consult both instruction files first.
+  - Consult only the uploaded chapter slice for tutoring.
+  - Generate and review a chapter outline (Hallucination Prevention Step) before proceeding.
+- After outline confirmation, follow the strict Day 1 / Day 2 tutoring flow:
+  - Day 1: Outline → Interactive Tutoring → Homework Assignment.
+  - Day 2: Homework Review → Error Correction → Conceptual Reinforcement.
+
+ARTIFACT LIST
+
+Course_Universal_Instructions.txt: Permanent behavioral rules.
+Template for Course_X_Instructions.txt: Specific course instance parameters.
+Project_Context_Message.txt: Directs LLM to consult instructions first.
+
+NOTES
+
+Minimalism: Only necessary chapters, no prefaces or indexes unless specified.
+Authority Binding: No ChatGPT "freestyling" or outside source material.
+Manual Control: User retains manual context control (uploads/deletes).
+Behavioral Consistency: Adversarial, dialectical tutoring enforced at all times.
