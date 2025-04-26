@@ -25,14 +25,18 @@ PROCESS OVERVIEW
 
 4. Parameter Generation for Slicing Script
 - Provide extracted Table of Contents and page offset to ChatGPT.
-- Instruct ChatGPT to generate input parameters (chapter slices) for the PDF slicing script based on logical chapter breaks.
+- Instruct ChatGPT to generate the required parameters (chapter slices) and specialize the provided template slicing script (ExampleTemplate_SliceScript.py) accordingly.
+- The specialized script must hardcode:
+  - Chapter slice definitions.
+  - Page offset for logical to physical page adjustment.
+- The specialized script must retain its warning behavior for any slices larger than 140 pages.
 
 5. PDF Chunking
-- Run the slicing script using the generated parameters.
-- Slice into chapter-based PDFs.
-- Combine adjacent chapters if together <110 pages.
-- Flag chapters >140 pages for manual intervention.
-- Name slices using the format: CHAPTER_<X>_<TITLE>.pdf.
+- Run the specialized slicing script on the input textbook PDF.
+- Slice into chapter-based PDFs according to the hardcoded mappings.
+- Combine adjacent chapters if their combined length is less than 110 pages.
+- Flag and manually review any slices larger than 140 pages (script will output warnings automatically).
+- Name slices using the format: CHAPTER_<X>_<TITLE>.pdf or if combined, CHAPTER_<X>_<Y>_<TITLEX>_<TITLEY>.pdf.
 
 6. Spot Check Chapter Slices
 - Manually inspect each generated chapter PDF.
@@ -66,10 +70,7 @@ ARTIFACT LIST
 Course_Universal_Instructions.txt: Permanent behavioral rules.
 Template for Course_X_Instructions.txt: Specific course instance parameters.
 Project_Context_Message.txt: Directs LLM to consult instructions first.
+ExampleTemplate_SliceScript.py: Template slicing script to be specialized per course.
 
-NOTES
+=============================
 
-Minimalism: Only necessary chapters, no prefaces or indexes unless specified.
-Authority Binding: No ChatGPT "freestyling" or outside source material.
-Manual Control: User retains manual context control (uploads/deletes).
-Behavioral Consistency: Adversarial, dialectical tutoring enforced at all times.
