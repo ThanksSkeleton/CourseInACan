@@ -68,7 +68,7 @@ For each tutoring session:
 ARTIFACT LIST
 
 Course_Universal_Instructions.txt: Permanent behavioral rules.
-Template for Course_X_Instructions.txt: Specific course instance parameters.
+Course_Template_Instructions.txt: Specific course instance parameters - Template.
 Project_Context_Message.txt: Directs LLM to consult instructions first.
 ExampleTemplate_SliceScript.py: Template slicing script to be specialized per course.
 
