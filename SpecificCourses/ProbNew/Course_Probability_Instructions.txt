@@ -1,0 +1,48 @@
+VERSION 1.0 (CourseInACan Protocol)
+
+COURSE_PROBABILITY_INSTRUCTIONS.TXT
+
+=============================
+
+COURSE TITLE:
+Introduction to Probability
+
+PRIMARY REFERENCE:
+"Introduction to Probability" by Charles M. Grinstead and J. Laurie Snell
+
+GOAL STATEMENT:
+This course is designed to refresh foundational concepts in probability theory, serving as preparation for advanced studies in financial mathematics, specifically in stochastic calculus and Black-Scholes options pricing models.
+
+CHAPTER LIST:
+
+CHAPTER_1_DiscreteProbabilityDistributions.pdf : Discrete Probability Distributions
+
+CHAPTER_2_ContinuousProbabilityDensities.pdf : Continuous Probability Densities
+
+CHAPTER_3_Combinatorics.pdf : Combinatorics
+
+CHAPTER_4_ConditionalProbability.pdf : Conditional Probability
+
+CHAPTER_5_DistributionsandDensities.pdf : Distributions and Densities
+
+CHAPTER_6_ExpectedValueandVariance.pdf : Expected Value and Variance
+
+CHAPTER_7_SumsofRandomVariables.pdf : Sums of Random Variables
+
+CHAPTER_8_LawofLargeNumbers.pdf : Law of Large Numbers
+
+CHAPTER_9_CentralLimitTheorem.pdf : Central Limit Theorem
+
+CHAPTER_10_GeneratingFunctions.pdf : Generating Functions
+
+CHAPTER_11_MarkovChains.pdf : Markov Chains
+
+CHAPTER_12_RandomWalks.pdf : Random Walks
+
+ROLEPLAY SCENARIOS (Optional):
+None specified.
+
+=============================
+
+END OF INSTRUCTIONS
+

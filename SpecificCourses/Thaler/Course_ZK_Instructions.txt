@@ -1,0 +1,63 @@
+VERSION 1.0 (CourseInACan Protocol)
+
+COURSE_X_INSTRUCTIONS.TXT
+
+=============================
+
+COURSE TITLE:
+Proofs, Arguments, and Zero-Knowledge
+
+PRIMARY REFERENCE:
+"Proofs, Arguments, and Zero-Knowledge" by Justin Thaler (2022)
+
+GOAL STATEMENT:
+This course aims to provide a foundational but realistic understanding of the theoretical stack underlying zero-knowledge proofs. It is designed for students who already have practical experience with zero-knowledge proof systems (such as Circom) and now seek to strengthen their mathematical grounding. The objective is not full theoretical mastery, but to build enough conceptual and formal understanding to navigate, evaluate, and learn new technologies (such as NOIR and other zk-SNARK/zk-STARK languages) with greater confidence. Progress through this course recognizes the difficulty of the material and emphasizes breadth of exposure over depth of proof reconstruction.
+
+CHAPTER LIST:
+
+CHAPTER_1_Introduction.pdf : Introduction
+
+CHAPTER_2_PowerofRandomness.pdf : The Power of Randomness: Fingerprinting and Freivalds' Algorithm
+
+CHAPTER_3_DefinitionsandTechnicalPreliminaries.pdf : Definitions and Technical Preliminaries
+
+CHAPTER_4_InteractiveProofs.pdf : Interactive Proofs
+
+CHAPTER_5_PubliclyVerifiableArguments.pdf : Publicly Verifiable, Non-Interactive Arguments via Fiat-Shamir
+
+CHAPTER_6_FrontEnds.pdf : Front Ends: Turning Computer Programs Into Circuits
+
+CHAPTER_7_FirstSuccinctArgument.pdf : A First Succinct Argument for Circuit Satisfiability, from Interactive Proofs
+
+CHAPTER_8_MIPsandSuccinctArguments.pdf : MIPs and Succinct Arguments
+
+CHAPTER_9_PCPsandSuccinctArguments.pdf : PCPs and Succinct Arguments
+
+CHAPTER_10_InteractiveOracleProofs.pdf : Interactive Oracle Proofs
+
+CHAPTER_11_ZeroKnowledgeProofsandArguments.pdf : Zero-Knowledge Proofs and Arguments
+
+CHAPTER_12_ProtocolsandCommitments.pdf : Protocols and Commitments from Hardness of Discrete Logarithm
+
+CHAPTER_13_ZeroKnowledgeviaCommitAndProve.pdf : Zero-Knowledge via Commit-And-Prove and Masking Polynomials
+
+CHAPTER_14_PolynomialCommitmentsDiscreteLog.pdf : Polynomial Commitments from Hardness of Discrete Logarithm
+
+CHAPTER_15_PolynomialCommitmentsPairings.pdf : Polynomial Commitments from Pairings
+
+CHAPTER_16_WrapUpofPolynomialCommitments.pdf : Wrap-Up of Polynomial Commitments
+
+CHAPTER_17_LinearPCPsandSuccinctArguments.pdf : Linear PCPs and Succinct Arguments
+
+CHAPTER_18_SNARKCompositionandRecursion.pdf : SNARK Composition and Recursion
+
+CHAPTER_19_BirdsEyeViewofPracticalArguments.pdf : Bird's Eye View of Practical Arguments
+
+ROLEPLAY SCENARIOS (Optional):
+
+The Gremlins of Zero Knowledge: Each gremlin personifies an individual prover or proof instance within a larger proof system. Gremlins act as agents obeying the rules of their assigned protocols (e.g., Sum-Check Prover, GKR Prover, Fiat-Shamir Prover), carrying private information, making commitments, responding to challenges, or transmitting messages. The tutor may use gremlins to illustrate how proofs are constructed, verified, transformed, or attacked at the level of individual participants, while strictly preserving formal accuracy.
+
+=============================
+
+END OF FILE
+
